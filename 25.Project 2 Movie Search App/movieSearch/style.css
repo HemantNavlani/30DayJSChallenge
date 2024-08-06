@@ -1,0 +1,80 @@
+*{
+    margin: 0px;
+}
+header{
+    background-color: aqua;
+    color: black;
+    height:100px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    text-decoration: underline;
+    font-family:cursive;
+}
+
+#searchDiv{
+    margin-top: 40px;
+    height: 20px;
+    gap: 10px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#input{
+    height: 25px;
+    width: 300px;
+    border: 2px solid aqua;
+}
+
+
+
+#search{
+    height: 25px;
+    width: 60px;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    border: 1px solid rgb(0, 255, 238);
+    border-radius: 5px;
+}
+#search:hover{
+    height: 30px;
+    width: 80px;
+    background-color: aqua ;
+    color: black;
+    border: 1px solid black
+}
+#movieResults{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+#extra{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+#moreInfo{
+    height: 25px;
+    width: 100px;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    border: 1px solid rgb(0, 255, 238);
+    border-radius: 5px;
+}
+#moreInfo:hover{
+    height: 30px;
+    width: 110px;
+    background-color: aqua ;
+    color: black;
+    border: 1px solid black
+}
