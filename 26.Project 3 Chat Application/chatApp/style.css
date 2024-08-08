@@ -1,0 +1,88 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+#loginContainer, #chatContainer {
+  width: 80%;
+  max-width: 600px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+#chatContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 80vh;
+  max-height: 600px;
+  overflow: hidden;
+  opacity: 0;
+  transform: scale(0.9);
+  animation: fadeInScale 0.5s forwards;
+}
+#messages {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  border-bottom: 1px solid #ccc;
+}
+.message {
+  padding: 10px;
+  border-radius: 5px;
+  margin: 10px 0;
+  animation: fadeIn 0.3s ease;
+}
+.message.system {
+  background-color: #ffeb3b;
+  text-align: center;
+  font-weight: bold;
+}
+.message.you {
+  background-color: #e1f5fe;
+  align-self: flex-end;
+}
+.message.other {
+  background-color: #fff9c4;
+  align-self: flex-start;
+}
+#inputArea {
+  display: flex;
+  border-top: 1px solid #ccc;
+}
+#messageInput {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 0 0 0 10px;
+  outline: none;
+}
+#sendButton {
+  width: 100px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 0 0 10px 0;
+  transition: background-color 0.3s ease;
+}
+#sendButton:hover {
+  background-color: #0056b3;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeInScale {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
